@@ -13,9 +13,11 @@ After ensuring everything above are ready, do the followings from git cloned dir
 - Modify `docker-compose.yml` for postgres details
 - Run from bash
 
-    `mkdir -p ./volumes/app/mattermost/{data,logs,config} && \
-     sudo chown -R 2000:2000 ./volumes/app/mattermost/ && \
-     docker-compose up -d`
+    ```
+    mkdir -p ./volumes/app/mattermost/{data,logs,config} && \
+    sudo chown -R 2000:2000 ./volumes/app/mattermost/ && \
+    docker-compose up -d
+    ```
 
 - If everything is okay, you'll find a docker container running for mattermost by typing `docker ps` on bash shell.
 - Make a nginx virtual host config for your IM Server by modifying `im.host.conf` and copy it to `/etc/nginx/sites-enabled/` directory or, any directory where nginx can read config from.
