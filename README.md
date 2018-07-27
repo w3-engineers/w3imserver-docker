@@ -19,7 +19,7 @@ After ensuring everything above are ready, do the followings from git cloned dir
     docker-compose up -d
     ```
 
-- If everything is okay, you'll find a docker container running for mattermost by typing `docker ps` on bash shell.
+- If everything is okay, you'll find a docker container running for W3IM server by typing `docker ps` on bash shell.
 - Make a nginx virtual host config for your IM Server by modifying `im.host.conf` and copy it to `/etc/nginx/sites-enabled/` directory or, any directory where nginx can read config from.
 - Run `sudo nginx -t` to check if any error. Fix if found reload if it's ok using `sudo service nginx reload`
 - You can now access your IM URL from any browser and can set, a default **System admin** user for your IM.
